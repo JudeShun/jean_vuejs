@@ -35,7 +35,7 @@
                 />
               </div>
               <center>
-                <button type="button" class="btn btn-outline-success login-btn" id="btnLogin" @click='submit'>Save changes</button>
+                <button type="button" class="btn btn-outline-success login-btn" id="btnLogin" @click='save'>Save changes</button>
                 
               </center>
             </div>
@@ -46,12 +46,87 @@
 </template>
 
 <script>
+
 import AUTH from 'services/auth'
+export default {
+  data() {
+    AUTH
+    return {
+      username: "",
+      email: "",
+      password: ""
+    };
+  },
+  methods: {
+    save: function(e) {
+      e.preventDefault();
+      AUTH.save(this.username,this.email, this.password)
+    },
 
-export default{
-    data(){
+  }
+};
 
-    }
-}
+// export default {
+//   data() {
+//     AUTH
+//     return {
+//       username: "",
+//       email: "",
+//       password: ""
+//     };
+//   },
+//   methods: {
+//     update(): function(e) {
+//       e.preventDefault();
+//       AUTH.update(this.username,this.email, this.password)
+//     },
+
+  // };
+// };
 
 </script>
+
+<style scoped>
+  .card {
+  background-color: pink;
+  margin-top: 50px;
+  padding: 30px;
+}
+  
+
+.h3 {
+  margin-left: 500px;
+  margin-top: 300px;
+  font-size: 40px;
+  font-family: Times new;
+}
+.nav {
+  margin-block: auto;
+}
+
+.card-header {
+  text-align: center;
+  font-weight:bold;
+  font-size: 30px;
+  letter-spacing: 5px;
+  background-color: black;
+  color:pink;
+  
+}
+
+label {
+  font-weight:bold;
+}
+
+input {
+  border: 2px solid black;
+}
+
+#btnLogin {
+  color: black;
+  border: 2px solid black;
+  margin-top: 5px;
+  padding: 12px 30px;
+}
+
+</style>
