@@ -21,3 +21,11 @@ export default {
   }
 }
 </script>
+<style scoped>
+   #app{
+      background-image: url(https://thumbs.dreamstime.com/t/abstract-metallic-black-blue-frame-sport-design-concept-innovation-background-eps-vector-75448092.jpg);
+      background-size:cover;
+      background-repeat:no-repeat;
+
+    }
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="jumbotron">
-      <h1>Subjects</h1>
+    <div class="jumbotron-header">Subjects</div>
     </div>
     <center>
       <b-card text-align id="card" img-top tag="article" style="max-width: 30rem;" class="mb-2">
@@ -54,10 +54,21 @@
 <style>
 #card {
   margin-top: 20px;
+  color:black;
+  background-color:skyblue;
+  font-weight: bold;
 }
 .jumbotron {
   padding: 20px;
   text-align: center;
+  color: black;
+  background-color: skyblue;
+}
+#card1{
+  background-color:skyblue;
+}
+.jumbotron-header{
+  background-color:aqua; 
 }
 </style>
 

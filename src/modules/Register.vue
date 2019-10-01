@@ -111,34 +111,34 @@ export default {
 
 <style>
   .card {
-  background-color: pink;
+  background-color:skyblue;
   margin-top: 50px;
-  padding: 30px;
+  padding: 15px;
 }
   
-
+/* 
 .h3 {
   margin-left: 500px;
   margin-top: 300px;
   font-size: 40px;
   font-family: Times new;
-}
-.nav {
+} */
+/* .nav {
   margin-block: auto;
-}
+} */
 
 .card-header {
   text-align: center;
-  font-weight:bold;
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 5px;
-  background-color: black;
-  color:pink;
+  background-color: black; 
+  color:skyblue;
   
 }
 
 label {
   font-weight:bold;
+  text-align: center;
 }
 
 input {

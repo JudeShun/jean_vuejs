@@ -5,7 +5,7 @@
       <div class="col-md-4">
         <div class="container">
           <div class="card">
-            <div class="card-header">UPDATE INFO</div>
+            <div class="card-header">UPDATE INFORMATION</div>
             <div class="card-body">
                 <div class="form-group">
                 <label for="username" class="bmd-label-floating">Username</label>
@@ -88,7 +88,7 @@ export default {
 
 <style scoped>
   .card {
-  background-color: pink;
+  background-color: skyblue;
   margin-top: 50px;
   padding: 30px;
 }
@@ -110,7 +110,7 @@ export default {
   font-size: 30px;
   letter-spacing: 5px;
   background-color: black;
-  color:pink;
+  color:skyblue;
   
 }
 

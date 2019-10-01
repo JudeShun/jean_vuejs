@@ -10,8 +10,8 @@
             <b-card-img :src="require('assets/user.png')" class="rounded-0"></b-card-img>
           </b-col>
           <b-col md="6">
-            <b-card-body title="Personal Info">
-                <hr>
+            <b-card-body title="Personal Information">
+                <br><hr>
               <b-card-text>
                 <h6>Username: {{firstname}}</h6>
                 <h6>Email: {{email}}</h6>
@@ -28,9 +28,14 @@
 </template>
 
 <style>
+/* #container{
+  background-color:skyblue;
+
+} */
 .jumbotron{
     padding: 20px;
     text-align: center;
+    background-color: skyblue;
 }
 #card {
   margin-top: 50px;

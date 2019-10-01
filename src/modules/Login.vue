@@ -70,9 +70,11 @@ export default {
 
 <style scoped>
   .card {
-  background-color: pink;
-  margin-top: 50px;
-  padding: 30px;
+   background-color:skyblue;
+  margin-top: 60px;
+  padding: 50px;
+  height:500px;
+  width:400px;
 }
   
 
@@ -88,11 +90,11 @@ export default {
 
 .card-header {
   text-align: center;
-  font-weight:bold;
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 5px;
-  background-color: black;
-  color:pink;
+  background-color: black; 
+  color:skyblue;
+  
   
 }
 
