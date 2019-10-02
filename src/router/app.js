@@ -19,7 +19,7 @@ export default {
         name: 'Dashboard',
         component: resolve => require(['modules/Dashboard.vue'], resolve),
         meta: {
-            tokenRequired: false
+            tokenRequired: true
         },
     },
     {

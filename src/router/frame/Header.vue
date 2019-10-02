@@ -3,7 +3,7 @@
  <b-navbar toggleable="lg" type="dark" variant="info">
     <b-navbar-brand href="#">Student's Panel</b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle target="nav-collapse" is-nav v-if="auth.user === null"></b-navbar-toggle>
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
@@ -28,8 +28,14 @@
 </template>
 
 <script>
- import ROUTER from '../../router'
+ import ROUTER from 'router'
+ import AUTH from "services/auth"
  export default {
+   data(){
+     return {
+       auth: AUTH
+     }
+   },
      methods : {
          redirect (route) {
              ROUTER.push(route)

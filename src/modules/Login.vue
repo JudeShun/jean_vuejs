@@ -29,7 +29,6 @@
               </div>
               <center>
                 <button type="button" class="btn btn-outline-success login-btn" id="btnLogin" @click='submit'>Login</button>
-                
               </center>
             </div>
           </div>
@@ -61,9 +60,12 @@ export default {
   methods: {
     submit: function(e) {
       e.preventDefault();
-      AUTH.login(this.email, this.password)
+      let user = AUTH.login(this.email, this.password);
+      AUTH.setUser(user);
+      if(user !== null){
+        ROUTER.push('/Dashboard')
+      }
     },
-
   }
 };
 </script>
