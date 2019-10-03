@@ -54,5 +54,17 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "```\r yarn install\r ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JudeShun/jean_vuejs.git"
+  },
+  "author": "Jude Cabalhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JudeShun/jean_vuejs/issues"
+  },
+  "homepage": "https://github.com/JudeShun/jean_vuejs#readme"
 }

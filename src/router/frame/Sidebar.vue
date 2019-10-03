@@ -1,5 +1,5 @@
 <template>
-  <sidebar-menu :menu="menu" />
+  <sidebar-menu :menu="menu" class="Menu" />
 </template>
  
 <script>
@@ -14,7 +14,7 @@ export default {
         {
           href: "/Dashboard",
           title: "Dashboard",
-          icon: "fa fa-chart-area",
+          icon: "fa fa-chart-profile",
         },
         {
           href: "/Subjects",
@@ -36,3 +36,9 @@ export default {
   }
 };
 </script> 
+<style>
+      #Menu{
+        color:aqua;
+      }
+
+</style>

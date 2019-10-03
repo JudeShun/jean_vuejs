@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div class="jumbotron">
+  <!-- <div>
+    <div class="jumbotron"></>
     <div class="jumbotron-header">Subjects</div>
-    </div>
+    </div> -->
     <center>
       <b-card text-align id="card" img-top tag="article" style="max-width: 30rem;" class="mb-2">
         <b-form-group label-size="lg" label-for="input-lg">
@@ -58,18 +58,18 @@
   background-color:skyblue;
   font-weight: bold;
 }
-.jumbotron {
+/* .jumbotron {
   padding: 20px;
   text-align: center;
   color: black;
   background-color: skyblue;
-}
+} */
 #card1{
   background-color:skyblue;
 }
-.jumbotron-header{
+/* .jumbotron-header{
   background-color:aqua; 
-}
+} */
 </style>
 
 <script>

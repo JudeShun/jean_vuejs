@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <!-- <div>
     <div class="jumbotron">
       <h1>Dashboard</h1>
-    </div>
+    </div> -->
+   
     <div id="card">
       <b-card no-body class="overflow-hidden">
         <center>
@@ -16,7 +17,7 @@
         </center>
       </b-card>
     </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <style scoped>
@@ -29,11 +30,11 @@
   height:500px;
   width: 550px;
 }
-.jumbotron{
+/* .jumbotron{
     padding:20px;
     text-align: center;
     color:blue;
-}
+} */
 #image {
   width: 250px;
   height: 220px;
