@@ -1,8 +1,8 @@
 <template>
-  <!-- <div id="container">
+  <div id="container">
     <div class="jumbotron">
       <h1>Personal Information</h1>
-    </div> -->
+    </div>
     <div id="card">
       <b-card no-body class="overflow-hidden" style="max-width: 540px;">
         <b-row no-gutters>
@@ -24,19 +24,19 @@
         </b-row>
       </b-card>
     </div>
-  <!-- </div> -->
+  </div>
 </template>
 
 <style>
-/* #container{
+#container{
   background-color:skyblue;
 
-} */
-/* .jumbotron{
+}
+.jumbotron{
     padding: 20px;
     text-align: center;
     background-color: skyblue;
-} */
+}
 #card {
   margin-top: 50px;
   margin-left: 380px;

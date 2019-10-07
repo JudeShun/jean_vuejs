@@ -18,9 +18,13 @@ export default {
     login(email, password) {
         for (let i = 0; i < this.registeredUser.length; i++) {
             if (this.registeredUser[i].email === email && this.registeredUser[i].password === password) {
+                ROUTER.push('/Dashboard')
+                this.setUser(email)
+
                 return this.registeredUser[i];
             }
         }
+
         return null
     },
     logout() {

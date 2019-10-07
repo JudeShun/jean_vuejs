@@ -22,7 +22,7 @@
 
 <style scoped>
 .overflow-hidden{
-  color:skyblue;
+  /* color:skyblue; */
 }
 #card {
   margin-top: 30px;

@@ -28,7 +28,7 @@
                 />
               </div>
               <center>
-                <button type="button" class="btn btn-outline-success login-btn" id="btnLogin" @click='submit'>Login</button>
+                <button type="button" class="btn btn-outline-success login-btn" id="btnLogin" @click='log'>Login</button>
               </center>
             </div>
           </div>
@@ -48,7 +48,9 @@
 }
 </style>
 <script>
-import AUTH from 'services/auth'
+import AUTH from "services/auth";
+// import jquery from "jquery";
+// import ROUTER from "router";
 export default {
   data() {
     AUTH
@@ -58,14 +60,38 @@ export default {
     };
   },
   methods: {
-    submit: function(e) {
+    log: function(e) {
       e.preventDefault();
-      let user = AUTH.login(this.email, this.password);
-      AUTH.setUser(user);
-      if(user !== null){
-        ROUTER.push('/Dashboard')
-      }
-    },
+      // let user = AUTH.login(this.email, this.password);
+      AUTH.login(this.email, this.password);
+      // if (this.email == "" || this.password == "") {
+      //   alert("Please Enter your email and password!!! Inputs are Required..");
+      //   ROUTER.push("/Login");
+      // }
+      // AUTH.setUser(user);
+      // if (user != null) {
+      //   alert("Successfully Login!!!");
+      //   ROUTER.push("/Dashboard");
+      // } else {
+      //   alert("Please Register First!!!");
+      //   ROUTER.push("/Login");
+      // }
+
+      // let link = `http://localhost:3000/db/create/${this.content.email}/${
+      //   this.content.password
+      // }`;
+      // jquery
+      //   .ajax({
+      //     url: link,
+      //     method: "GET",
+      //     headers: {
+      //       "Access-control-Allow-Origin": "*"
+      //     }
+      //   })
+      //   .then(response => {
+      //     alert(response.username);
+      //   });
+    }
   }
 };
 </script>
