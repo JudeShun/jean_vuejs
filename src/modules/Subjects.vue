@@ -18,9 +18,17 @@
           <b-form-input v-model="infos.day" id="day" size="lg"></b-form-input>
           <label id="room">Room:</label>
           <b-form-input v-model="infos.room" id="room" size="lg"></b-form-input>
-          <br>
+          <br />
           <b-button variant="primary" @click="addItem"
            >Add Subject</b-button>
+           <br />
+          <label id="time">Remove:</label>
+            <b-form-input v-model="infos.del" id="time" size="lg"></b-form-input>
+            <br />
+            <b-button variant="primary" id="del" @click="deleteItem">Delete Subject</b-button>
+            <br />
+            <br />
+           
         </b-form-group>
       </b-card>
       <b-card text-align id="card1" img-top tag="article" style="max-width: 40rem;" class="mb-2">
@@ -47,7 +55,7 @@
         </table>
       </b-card>
     </center>
-  </div>
+  <!-- </div> -->
 </template>
 
 
@@ -70,6 +78,7 @@
 /* .jumbotron-header{
   background-color:aqua; 
 } */
+
 </style>
 
 <script>
@@ -84,24 +93,28 @@ export default {
         day: "",
         room: "",
       }
-    }
+    };
   },
   methods: {
+    deleteItem() {
+      for (let i = 0; i < this.rows.length; i++) {
+        if (this.rows[i].subject === this.infos.del) {
+          if (this.rows.splice(this.rows.indexOf(this.rows[i]), 1));
+        }
+      }
+      this.infos.del = "";
+    },
     addItem() {
       var object = {
         subject: this.infos.subject,
         teacher: this.infos.teacher,
-        time: this.infos.time,
-        day: this.infos.day,
-        room: this.infos.room
+        schedule: this.infos.schedule
       };
-      this.rows.push( object )
-      this.infos.subject = ""
-      this.infos.teacher = ""
-      this.infos.time = ""
-      this.infos.day= ""
-      this.infos.room = ""
-    }
+      this.rows.push(object);
+      this.infos.subject = "";
+      this.infos.teacher = "";
+      this.infos.schedule = "";
+          }
   }
 };
 </script>

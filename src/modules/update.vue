@@ -46,7 +46,7 @@
 </template>
 
 <script>
-// import AUTH from "services/auth";
+import AUTH from "services/auth";
 export default {
   data() {
     return {
@@ -63,7 +63,7 @@ export default {
         sessionStorage.setItem("Email", this.email),
         sessionStorage.setItem("Password", this.password);
 
-      (this.username = ""), (this.email = ""), (this.password = "");
+      AUTH.save(this.username,this.email,this.password);
     }
   }
 };
